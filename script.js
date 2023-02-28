@@ -11,6 +11,14 @@ var password = " ";
 //Prompts for password length and whether to use uppercase, lowercase, numeric or special characters.
 function generatePassword() {
   var userChoiceNumber = window.prompt("Choose a password length min 8 max 128");
+  //logic for 8-128 characters required
+  if (userChoiceNumber < 8 || userChoiceNumber > 128) {
+    alert("Password must be between 8 and 128 characters.");
+    return "Password must be 8-128 characters";
+  }
+  else {
+  
+  }
   
   var upcase = window.confirm("Include Uppercase Letters?");
   var lowcase = window.confirm("Include Lowercase Letters?");
@@ -18,15 +26,8 @@ function generatePassword() {
   var specialCharacters = window.confirm("Include Special Characters?")
   
   
-//logic for 8-128 characters required
 
-if (userChoiceNumber < 8 || userChoiceNumber > 128) {
-  alert("Password must be between 8 and 128 characters.");
-  return "Password must be 8-128 characters";
-}
-else {
 
-}
 
 
 if (numeric === true) {
