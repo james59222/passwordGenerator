@@ -25,12 +25,7 @@ function generatePassword() {
   var numeric = window.confirm("Include Numbers?");
   var specialCharacters = window.confirm("Include Special Characters?")
   
-  
-
-
-
-
-if (numeric === true) {
+  if (numeric === true) {
     mega = mega + numbers;
     }
 
