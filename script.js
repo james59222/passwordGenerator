@@ -13,8 +13,8 @@ function generatePassword() {
   var userChoiceNumber = window.prompt("Choose a password length min 8 max 128");
   //logic for 8-128 characters required
   if (userChoiceNumber < 8 || userChoiceNumber > 128) {
-    alert("Password must be between 8 and 128 characters.");
-    return "Password must be 8-128 characters";
+    alert("Password must be between 8 to 128 characters in length.");
+    return "Password must be between 8 to 128 characters in length.";
   }
   else {
   
